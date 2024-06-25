@@ -1,3 +1,4 @@
+<style>
   body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -96,3 +97,4 @@
   @media screen and (max-width:450px){
     .search-container-new button {padding: 8px 10px; margin-left: 0px; width: 20%;}
   }
+</style>
