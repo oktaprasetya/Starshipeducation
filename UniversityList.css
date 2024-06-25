@@ -1,0 +1,98 @@
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .university-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .university-card-new {
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0 10px 10px rgba(0,0,0,.5);
+
+  }
+  
+  @media screen and (max-width:500px){
+    .university-card-new {width: 45%; margin: 5px; padding: 0px; box-shadow: none;}
+  }   
+  .university-card-new:hover {
+    transform: scale(1.05);
+  }
+  .university-card-new img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  @media screen and (max-width:500px){
+    .university-card-new img {width: 120px; height: 120px; object-fit: cover; box-shadow: 0 10px 10px rgba(0,0,0,.5);}
+  }  
+  
+  .university-card-new p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  @media screen and (max-width:500px){
+    .university-card-new p {font-size: 14px; font-weight: bold; line-height: 100%;}
+  }  
+  
+  .university-card-new a {text-decoration: none;}
+  
+  .pagination-container-new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .pagination-container-new button {
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .pagination-container-new button.active {
+    background-color: #0056b3;
+  }
+    
+  .search-container-new {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .search-container-new input[type="text"] {
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 70%;
+  }
+  
+  .search-container-new button {
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 20px;
+    margin: 0 5px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width:450px){
+    .search-container-new button {padding: 8px 10px; margin-left: 0px; width: 20%;}
+  }
